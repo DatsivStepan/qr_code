@@ -3,8 +3,8 @@
     use yii\widgets\LinkPager;
     use yii\bootstrap\Alert;
 ?>
-<div class="row wrap">
-    <div class="col-sm-12">
+<div class="row wrap forWrap">
+    <div class="col-sm-12" style="margin-top:10px;">
         <?php echo $this->render('menu'); ?>
     </div>
     <div class="col-sm-4">
