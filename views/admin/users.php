@@ -3,7 +3,7 @@
     use yii\widgets\LinkPager;
     use yii\bootstrap\Alert;
 ?>
-<div class="row wrap">
+<div class="row wrap forWrap">
     <div class=col-sm-12>
         <?php if(Yii::$app->session->hasFlash('UserDeleted')): ?>
             <?php
@@ -38,8 +38,10 @@
             ?>
         <?php endif; ?>
     </div>
-    <div class="col-sm-9 col-xs-12">
-        <?php echo $this->render('menu'); ?>
+    <div class="col-sm-12 col-xs-12">
+        <div class="col-sm-12" style="margin-top:10px;">
+            <?php echo $this->render('menu'); ?>
+        </div>
         <div class="col-sm-12">
             <?php echo $this->render('add_user', array('modelUser' => $modelUser)); ?>
         </div>
